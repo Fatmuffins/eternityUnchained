@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
-interface Character {
+export class Character {
 
   name: string
   cclass: string
