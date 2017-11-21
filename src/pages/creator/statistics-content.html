@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Statistics</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      Strength
+      <ion-badge item-end>{{strength}}</ion-badge>
+    </ion-list-header>
+    <ion-item>
+      <ion-range min="0" max="20" step="1" snaps="true" [(ngModel)]="strength">
+      </ion-range>
+    </ion-item>
+    <ion-list-header class="skinny">
+      Dexterity
+      <ion-badge item-end>{{dexterity}}</ion-badge>
+    </ion-list-header>
+    <ion-item>
+      <ion-range min="0" max="20" step="1" snaps="true" [(ngModel)]="dexterity">
+      </ion-range>
+    </ion-item>
+    <ion-list-header class="skinny">
+      Constitution
+      <ion-badge item-end>{{constitution}}</ion-badge>
+    </ion-list-header>
+    <ion-item>
+      <ion-range min="0" max="20" step="1" snaps="true" [(ngModel)]="constitution">
+      </ion-range>
+    </ion-item>
+    <ion-list-header class="skinny">
+      Intellect
+      <ion-badge item-end>{{intellect}}</ion-badge>
+    </ion-list-header>
+    <ion-item>
+      <ion-range min="0" max="20" step="1" snaps="true" [(ngModel)]="intellect">
+      </ion-range>
+    </ion-item>
+    <ion-list-header class="skinny">
+      Wisdom
+      <ion-badge item-end>{{wisdom}}</ion-badge>
+    </ion-list-header>
+    <ion-item>
+      <ion-range min="0" max="20" step="1" snaps="true" [(ngModel)]="wisdom">
+      </ion-range>
+    </ion-item>
+    <ion-list-header class="skinny">
+      Charisma
+      <ion-badge item-end>{{charisma}}</ion-badge>
+    </ion-list-header>
+    <ion-item>
+      <ion-range min="0" max="20" step="1" snaps="true" [(ngModel)]="charisma">
+      </ion-range>
+    </ion-item>
+  </ion-list>
+</ion-content>

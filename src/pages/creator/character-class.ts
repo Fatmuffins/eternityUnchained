@@ -3,20 +3,20 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class Character {
 
-  name: string
-  cclass: string
-  experience: number
+  name: string;
+  cclass: string;
+  experience: number;
   stats: {
-    strength: number
-    dexterity: number
-    constitution: number
-    intellect: number
-    wisdom: number
+    strength: number,
+    dexterity: number,
+    constitution: number,
+    intellect: number,
+    wisdom: number,
     charisma: number
-  }
+  };
   skills: {
 
-  }
+  };
   inventory?: {
 
   }

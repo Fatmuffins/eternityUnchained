@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController, ViewController } from 'ionic-angular';
 
 /**
  * Generated class for the CreatorPage page.
@@ -15,11 +15,30 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class CreatorPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,
+              public viewCtrl: ViewController,
+              public modalCtrl: ModalController) {
+
+  }
+
+  statModal() {
+    let modal = this.modalCtrl.create(StatisticsContent);
+    modal.present();
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CreatorPage');
   }
 
+}
+
+@Component({
+  selector: 'statistics-modal',
+  templateUrl: 'statistics-content.html',
+})
+export class StatisticsContent {
+  constructor(
+    public viewCtrl: ViewController,
+    public modalCtrl: ModalController
+  ) {}
 }
